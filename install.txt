@@ -3,5 +3,5 @@ sudo dphys-swapfile uninstall
 sudo apt-get purge dphys-swapfile
 
 export K3S_URL=https://192.168.1.110:6443
-export K3S_TOKEN=K1079e779017032f251378ba46a639362c3e647ddeee2189af0dea3e83da3a72d95::node:456c86d4fc1eb6e6ccb2e63a68564566
+export K3S_TOKEN=
 curl -sfL https://get.k3s.io | sh -
