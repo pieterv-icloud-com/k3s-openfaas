@@ -79,15 +79,19 @@ spec:
 
     # ingress configuration
     ingress:
-      enabled: false
+      enabled: true
       # Used to create Ingress record (should be used with exposeServices: false).
       hosts:
-        - host: gateway.openfaas.local  # Replace with gateway.example.com if public-facing
+        - host: gateway.openfaas.k3s.local  # Replace with gateway.example.com if public-facing
           serviceName: gateway
           servicePort: 8080
           path: /
+        - host: portal.openfaas.k3s.local  # Replace with gateway.example.com if public-facing
+          serviceName: gateway-external
+          servicePort: 8080
+          path: /
       annotations:
-        kubernetes.io/ingress.class: nginx
+        kubernetes.io/ingress.class: traefik
       tls:
         # Secrets must be manually created in the namespace.
 

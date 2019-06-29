@@ -27,3 +27,4 @@ Charts
 https://www.openfaas.com/faas-netes/index.yaml
 
 wget https://openfaas.github.io/faas-netes/openfaas-4.3.1.tgz
+wget https://kubernetes-charts.storage.googleapis.com/grafana-3.5.4.tgz
