@@ -1,0 +1,7 @@
+apiVersion: openfaas.com/v1alpha2
+kind: Function
+metadata:
+  name: hello-world
+spec:
+  image: pietervicloudcom/hello-world-armhf:node-6.9.1-alpine-armhf
+  name: hello-world
