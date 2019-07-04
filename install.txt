@@ -1,3 +1,7 @@
+ssh-keygen - no passphrase
+ssh-copy-keys to every node
+
+
 sudo apt-get purge dphys-swapfile
 
 export K3S_URL=https://192.168.1.110:6443
