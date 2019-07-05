@@ -6,3 +6,6 @@ metadata:
 spec:
   image: pietervicloudcom/hello-world-armhf:node-6.9.1-alpine-armhf
   name: hello-world
+  labels:
+    com.openfaas.scale.min: 2
+    com.openfaas.scale.max: 10
