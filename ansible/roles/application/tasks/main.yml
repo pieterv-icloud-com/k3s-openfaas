@@ -23,3 +23,11 @@
     owner: root
     group: root
     mode: 0644
+
+- name: Copy manifests
+  copy:
+    src: "{{ playbook_dir }}/../manifests/"
+    dest: "/var/lib/rancher/k3s/server/manifests"
+    owner: root
+    group: root
+    mode: 0644
