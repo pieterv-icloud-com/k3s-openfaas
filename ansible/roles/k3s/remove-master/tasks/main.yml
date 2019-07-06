@@ -1,0 +1,17 @@
+---
+
+- name: Disable k3s service
+  systemd:
+    name: k3s
+    enabled: no
+
+- name: Reboot
+  reboot:
+
+- name: Delete rancher folder
+  file:
+    path: /var/lib/rancher/
+    state: absent
+
+
+

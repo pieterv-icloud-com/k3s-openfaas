@@ -1,0 +1,13 @@
+---
+
+- hosts: master
+  gather_facts: yes
+  become: yes
+  roles:
+    - { role: k3s/remove-master }
+
+- hosts: node
+  gather_facts: yes
+  become: yes
+  roles:
+    - { role: k3s/remove-node }
