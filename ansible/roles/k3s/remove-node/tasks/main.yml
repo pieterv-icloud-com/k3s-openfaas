@@ -1,14 +1,14 @@
 ---
 
-- name: Disable k3s.agent service
+- name: Disable k3s0node service
   systemd:
-    name: k3s.agent
+    name: k3s-node
     enabled: no
 
 - name: Reboot
   reboot:
 
-- name: Delete rancher folder
+- name: Remove rancher folder
   file:
     path: /var/lib/rancher/
     state: absent

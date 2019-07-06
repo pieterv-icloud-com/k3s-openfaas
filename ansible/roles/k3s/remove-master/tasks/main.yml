@@ -8,7 +8,7 @@
 - name: Reboot
   reboot:
 
-- name: Delete rancher folder
+- name: Remove rancher folder
   file:
     path: /var/lib/rancher/
     state: absent
