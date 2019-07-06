@@ -17,9 +17,9 @@
       mode: 755
 
 - name: Copy helmcharts manifests
-  template:
+  copy:
     src: "{{ playbook_dir }}/../helm/*.yaml"
     dest: "/var/lib/rancher/k3s/server/manifests"
     owner: root
     group: root
-    mode: 0755
+    mode: 0644
