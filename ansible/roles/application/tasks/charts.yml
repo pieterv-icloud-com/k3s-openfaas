@@ -1,0 +1,17 @@
+---
+
+- name: Download OpenFaas helm chart
+  get_url:
+      url: https://openfaas.github.io/faas-netes/openfaas-4.3.1.tgz
+      dest: /var/lib/rancher/k3s/server/static/charts
+      owner: root
+      group: root
+      mode: 755
+
+- name: Download Grafana helm chart
+  get_url:
+      url: https://kubernetes-charts.storage.googleapis.com/grafana-3.5.4.tgz
+      dest: /var/lib/rancher/k3s/server/static/charts
+      owner: root
+      group: root
+      mode: 755
