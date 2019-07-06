@@ -16,7 +16,7 @@
       group: root
       mode: 755
 
-- name: Copy helmcharts manifests
+- name: Copy helmchart manifests
   copy:
     src: "{{ playbook_dir }}/../helm/*.yaml"
     dest: "/var/lib/rancher/k3s/server/manifests"
