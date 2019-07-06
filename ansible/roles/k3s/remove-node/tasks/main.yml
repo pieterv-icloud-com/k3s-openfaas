@@ -1,6 +1,6 @@
 ---
 
-- name: Disable k3s0node service
+- name: Disable k3s-node service
   systemd:
     name: k3s-node
     enabled: no
