@@ -18,7 +18,7 @@
 
 - name: Copy helmcharts manifests
   template:
-    src: "{{ playbook_dir }}../helm/*.yaml"
+    src: "{{ playbook_dir }}/../helm/*.yaml"
     dest: "/var/lib/rancher/k3s/server/manifests"
     owner: root
     group: root
