@@ -58,3 +58,14 @@
     path: /home/{{ ansible_user }}/.kube/config
     regexp: 'https://localhost:6443'
     replace: 'https://{{master_ip}}:6443'
+
+- name: Create kubectl alias
+  shell: alias kubectl="k3s kubectl"
+
+- name: Create critctl alias
+  shell: alias crictl="k3s crictl"
+
+- name: Create ctr alias
+  shell: alias crictl="k3s ctr"
+
+
