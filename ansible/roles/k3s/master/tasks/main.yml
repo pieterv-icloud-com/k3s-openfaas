@@ -59,13 +59,17 @@
     regexp: 'https://localhost:6443'
     replace: 'https://{{master_ip}}:6443'
 
-- name: Create kubectl alias
-  shell: alias kubectl="k3s kubectl"
+- name: Create kubectl symlink
+  file:
+    src: /usr/local/bin/k3s
+    dest: /usr/local/bin/kubectl
+    state: link
 
-- name: Create critctl alias
-  shell: alias crictl="k3s crictl"
+- name: Create crictl symlink
+  file:
+    src: /usr/local/bin/k3s
+    dest: /usr/local/bin/crictl
+    state: link
 
-- name: Create ctr alias
-  shell: alias crictl="k3s ctr"
 
 
