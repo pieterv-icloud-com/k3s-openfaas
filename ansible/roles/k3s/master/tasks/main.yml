@@ -28,7 +28,6 @@
 - name: Change file access node-token
   file:
     path: /var/lib/rancher/k3s/server
-    state: directory
     mode: "g+rx,o+rx"
 
 - name: Read node-token from master
