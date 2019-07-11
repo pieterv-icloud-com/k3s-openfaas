@@ -8,9 +8,29 @@
 - name: Reboot
   reboot:
 
-- name: Remove rancher folder
+- name: Remove rancher lib folder
   file:
-    path: /var/lib/rancher/
+    path: /var/lib/rancher/k3s
+    state: absent
+
+- name: Remove rancher etc folder
+  file:
+    path: /etc/rancher/k3s
+    state: absent
+
+- name: Remove k3s file
+  file:
+    path: /usr/local/bin/k3s
+    state: absent
+
+- name: Remove kubectl file
+  file:
+    path: /usr/local/bin/kubectl
+    state: absent
+
+- name: Remove crictl file
+  file:
+    path: /usr/local/bin/crictl
     state: absent
 
 
