@@ -23,12 +23,12 @@
     path: /usr/local/bin/k3s
     state: absent
 
-- name: Remove kubectl file
+- name: Remove kubectl symlink
   file:
     path: /usr/local/bin/kubectl
     state: absent
 
-- name: Remove crictl file
+- name: Remove crictl symlink
   file:
     path: /usr/local/bin/crictl
     state: absent
