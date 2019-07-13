@@ -16,7 +16,7 @@
     state: restarted
     enabled: yes
 
-- name: Wait for token
+- name: Wait for node-token
   wait_for:
     path: /var/lib/rancher/k3s/server/node-token
 
