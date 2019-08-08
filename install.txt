@@ -1,5 +1,5 @@
 ssh-keygen - no passphrase
-ssh-copy-keys to every node
+ssh-copy-id pi@192.168.1.114
 
 
 sudo apt-get purge dphys-swapfile

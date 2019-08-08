@@ -106,7 +106,7 @@ spec:
 
     basicAuthPlugin:
       image: openfaas/basic-auth-plugin:0.1.1
-      replicas: 1
+      replicas: 0
 
     nodeSelector: {}
 
