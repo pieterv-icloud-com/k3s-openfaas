@@ -258,12 +258,12 @@ spec:
           type: prometheus
           url: http://prometheus.openfaas:9090
           access: proxy
-          isDefault: true
+          isDefault: false
         - name: traefik
           type: prometheus
           url: http://traefik.kube-system:8080
           access: proxy
-          isDefault: true
+          isDefault: false
 
     ## Configure notifiers
     ## ref: http://docs.grafana.org/administration/provisioning/#alert-notification-channels
