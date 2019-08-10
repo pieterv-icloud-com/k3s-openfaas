@@ -1,6 +1,6 @@
 ---
 
-- name: Copy K3s service file
+- name: Copy k3s service file
   register: k3s_service
   template:
     src: "k3s.service.j2"
@@ -9,7 +9,7 @@
     group: root
     mode: 0755
 
-- name: Enable and check K3s service
+- name: Enable and check k3s service
   systemd:
     name: k3s
     daemon_reload: yes
