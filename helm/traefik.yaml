@@ -6,8 +6,6 @@ metadata:
 spec:
   chart: https://%{KUBERNETES_API}%/static/charts/traefik-1.64.0.tgz
   set:
-    rbac.enabled: "true"
-    ssl.enabled: "true"
-    kubernetes.ingressEndpoint.useDefaultPublishedService: "true"
-    dashboard.enabled: "true"
+    rbac.enabled: true
+    dashboard.enabled: true
     dashboard.domain: "traefik.k3s.local"
