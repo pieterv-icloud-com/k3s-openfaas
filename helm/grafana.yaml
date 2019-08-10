@@ -4,7 +4,7 @@ metadata:
   name: grafana
   namespace: kube-system
 spec:
-  chart: https://%{KUBERNETES_API}%/static/charts/grafana-3.5.4.tgz
+  chart: https://%{KUBERNETES_API}%/static/charts/grafana-3.5.7.tgz
   targetNamespace: monitoring
   valuesContent: |-
     rbac:

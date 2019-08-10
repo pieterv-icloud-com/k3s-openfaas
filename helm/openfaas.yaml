@@ -4,7 +4,7 @@ metadata:
   name: openfaas
   namespace: kube-system
 spec:
-  chart: https://%{KUBERNETES_API}%/static/charts/openfaas-4.3.1.tgz
+  chart: https://%{KUBERNETES_API}%/static/charts/openfaas-4.3.5.tgz
   targetNamespace: openfaas
   valuesContent: |-
     functionNamespace: openfaas-fn
