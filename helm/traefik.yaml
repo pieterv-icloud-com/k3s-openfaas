@@ -12,3 +12,4 @@ spec:
     dashboard.enabled: "true"
     dashboard.domain: "traefik.k3s.local"
     metrics.prometheus.enabled: "true"
+    metrics.prometheus.restrictAccess: "false"
