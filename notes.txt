@@ -45,6 +45,11 @@ pwd: strongpassword
 Serverless: 3434
 Original: 3526
 
+traefik
+=======
+
+traefik: 6293
+
 /etc/hosts
 ==========
 
