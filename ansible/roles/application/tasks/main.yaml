@@ -8,14 +8,6 @@
       group: root
       mode: 755
 
-- name: download prometheus-operator helm chart
-  get_url:
-      url: https://kubernetes-charts.storage.googleapis.com/prometheus-operator-6.4.3.tgz
-      dest: /var/lib/rancher/k3s/server/static/charts
-      owner: root
-      group: root
-      mode: 755
-
 - name: download openfaas helm chart
   get_url:
       url: https://openfaas.github.io/faas-netes/openfaas-4.3.5.tgz
