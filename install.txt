@@ -7,3 +7,6 @@ sudo apt-get purge dphys-swapfile
 export K3S_URL=https://192.168.1.110:6443
 export K3S_TOKEN=
 curl -sfL https://get.k3s.io | sh -
+
+helm fetch stable/traefik
+helm template --set kubernetes.ingressEndpoint.useDefaultPublishedService=true,rbac.enabled=true,ssl.enabled=true,dashboard.enabled=true,dashboard.domain=traefik.k3s.local,metrics.prometheus.enabled=true,metrics.prometheus.restrictAccess=false --name traefik --debug traefik-1.75.1.tgz
