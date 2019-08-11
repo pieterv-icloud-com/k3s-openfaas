@@ -70,7 +70,7 @@ spec:
 
     alertmanager:
       image: prom/alertmanager-linux-armv7:v0.17.0
-      create: true
+      create: false
 
     # async provider
     nats:
