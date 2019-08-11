@@ -1006,17 +1006,17 @@ spec:
 
       ## Deploy CRDs used by Prometheus Operator.
       ##
-      createCustomResource: true
+      createCustomResource: false
 
       ## Customize CRDs API Group
       crdApiGroup: monitoring.coreos.com
 
       # Remove CRDs before instaling, created for use on CI environment.
-      cleanupCustomResourceBeforeInstall: true
+      cleanupCustomResourceBeforeInstall: false
 
       ## Attempt to clean up CRDs created by Prometheus Operator.
       ##
-      cleanupCustomResource: true
+      cleanupCustomResource: false
 
       ## Labels to add to the operator pod
       ##
