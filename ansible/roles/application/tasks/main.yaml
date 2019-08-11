@@ -2,7 +2,7 @@
 
 - name: download traefik helm chart
   get_url:
-      url: https://kubernetes-charts.storage.googleapis.com/traefik-1.70.1.tgz
+      url: https://kubernetes-charts.storage.googleapis.com/traefik-1.75.1.tgz
       dest: /var/lib/rancher/k3s/server/static/charts
       owner: root
       group: root

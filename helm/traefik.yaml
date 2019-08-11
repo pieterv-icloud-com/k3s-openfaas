@@ -4,7 +4,7 @@ metadata:
   name: traefik
   namespace: kube-system
 spec:
-  chart: https://%{KUBERNETES_API}%/static/charts/traefik-1.70.1.tgz
+  chart: https://%{KUBERNETES_API}%/static/charts/traefik-1.75.1.tgz
   set:
     kubernetes.ingressEndpoint.useDefaultPublishedService: true 
     rbac.enabled: true 
