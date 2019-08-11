@@ -6,10 +6,10 @@ metadata:
 spec:
   chart: https://%{KUBERNETES_API}%/static/charts/traefik-1.70.1.tgz
   set:
-    kubernetes.ingressEndpoint.useDefaultPublishedService: "true" 
-    rbac.enabled: "true" 
-    ssl.enabled: "true"
-    dashboard.enabled: "true"
-    dashboard.domain: "traefik.k3s.local"
-    metrics.prometheus.enabled: "true"
-    metrics.prometheus.restrictAccess: "false"
+    kubernetes.ingressEndpoint.useDefaultPublishedService: true 
+    rbac.enabled: true 
+    ssl.enabled: true
+    dashboard.enabled: true
+    dashboard.domain: traefik.k3s.local
+    metrics.prometheus.enabled: true
+    metrics.prometheus.restrictAccess: false
