@@ -83,7 +83,7 @@ spec:
 
       ## Deploy alertmanager
       ##
-      enabled: true
+      enabled: false
 
       ## Service account for Alertmanager to use.
       ## ref: https://kubernetes.io/docs/tasks/configure-pod-container/configure-service-account/
@@ -1012,11 +1012,11 @@ spec:
       crdApiGroup: monitoring.coreos.com
 
       # Remove CRDs before instaling, created for use on CI environment.
-      cleanupCustomResourceBeforeInstall: false
+      cleanupCustomResourceBeforeInstall: true
 
       ## Attempt to clean up CRDs created by Prometheus Operator.
       ##
-      cleanupCustomResource: false
+      cleanupCustomResource: true
 
       ## Labels to add to the operator pod
       ##
