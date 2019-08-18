@@ -16,7 +16,7 @@ spec:
     image:
       repository: pietervicloudcom/octant-armhf
       tag: v0.5.1
-      pullPolicy: IfNotPresent
+      pullPolicy: AlwaysPull
 
     service:
       type: ClusterIP

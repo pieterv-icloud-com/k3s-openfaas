@@ -1,7 +1,7 @@
 #! /bin/sh
 server=https://kubernetes.default:443
 
-ca=$(base64 -w 0 < /var/run/secrets/kubernetes.io/serviceaccount/ca.crt)
+ca=$(base64 -d < /var/run/secrets/kubernetes.io/serviceaccount/ca.crt)
 token=$(cat /var/run/secrets/kubernetes.io/serviceaccount/token)
 namespace=$(cat /var/run/secrets/kubernetes.io/serviceaccount/namespace)
 
