@@ -1,7 +1,7 @@
 ---
 - name: copy octant chart
   copy:
-      src: "{{ playbook_dir }}/../charts/octant/*.tgz"
+      src: "{{ playbook_dir }}/../charts/octant/octant-0.5.1.tgz"
       dest: "/var/lib/rancher/k3s/server/static/charts/"
       owner: root
       group: root
