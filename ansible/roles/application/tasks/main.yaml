@@ -1,11 +1,11 @@
 ---
-- name: copy octant chart
-  copy:
-      src: "{{ playbook_dir }}/../charts/octant/octant-0.5.1.tgz"
-      dest: "/var/lib/rancher/k3s/server/static/charts/"
-      owner: root
-      group: root
-      mode: 0644
+#- name: copy octant chart
+#  copy:
+#      src: "{{ playbook_dir }}/../charts/octant/octant-0.5.1.tgz"
+#      dest: "/var/lib/rancher/k3s/server/static/charts/"
+#      owner: root
+#      group: root
+#      mode: 0644
 
 - name: download traefik helm chart
   get_url:
