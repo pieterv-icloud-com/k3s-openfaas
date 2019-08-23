@@ -5,7 +5,7 @@
     name: k3s
     enabled: no
 
-- name: Reboot
+- name: reboot
   reboot:
 
 - name: Remove rancher lib folder

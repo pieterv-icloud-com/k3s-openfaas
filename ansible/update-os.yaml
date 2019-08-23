@@ -1,0 +1,12 @@
+---
+- hosts: master
+  gather_facts: yes
+  become: yes
+  roles:
+    - { role: update-os }
+
+- hosts: node
+  gather_facts: yes
+  become: yes
+  roles:
+    - { role: update-os }
