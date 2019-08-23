@@ -1,4 +1,9 @@
 ---
+- name: install aptitude
+  apt:
+    name: aptitude 
+    upgrade: yes
+
 - name: update and upgrade apt packages
   become: true
   apt:
