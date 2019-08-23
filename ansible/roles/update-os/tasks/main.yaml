@@ -2,8 +2,7 @@
 - name: install aptitude
   apt:
     name: aptitude 
-    state: present
-    upgrade: yes
+    state: latest
 
 - name: update and upgrade apt packages
   become: true
