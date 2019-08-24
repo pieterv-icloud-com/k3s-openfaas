@@ -417,6 +417,7 @@ spec:
         #   - grafana.example.com
 
       sidecar:
+        image: pietervicloudcom/k8-sidecar-armhf:0.0.18
         dashboards:
           enabled: true
           label: grafana_dashboard
