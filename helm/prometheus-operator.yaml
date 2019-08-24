@@ -882,6 +882,9 @@ spec:
     ## Configuration for kube-state-metrics subchart
     ##
     kube-state-metrics:
+      image:
+        repository: carlosedp/kube-state-metrics
+        tag: v1.7.2
       rbac:
         create: true
       podSecurityPolicy:
