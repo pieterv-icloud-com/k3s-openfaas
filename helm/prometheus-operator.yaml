@@ -940,7 +940,7 @@ spec:
       enabled: true
 
       tlsProxy:
-        enabled: true
+        enabled: false
         image:
           repository: squareup/ghostunnel
           tag: v1.4.1
