@@ -1117,20 +1117,20 @@ spec:
       ## Prometheus-operator image
       ##
       image:
-        repository: quay.io/coreos/prometheus-operator
+        repository: carlosedp/prometheus-operator
         tag: v0.31.1
         pullPolicy: IfNotPresent
 
       ## Configmap-reload image to use for reloading configmaps
       ##
       configmapReloadImage:
-        repository: quay.io/coreos/configmap-reload
-        tag: v0.0.1
+        repository: carlosedp/configmap-reload
+        tag: v0.2.2 
 
       ## Prometheus-config-reloader image to use for config and rule reloading
       ##
       prometheusConfigReloaderImage:
-        repository: quay.io/coreos/prometheus-config-reloader
+        repository: carlosedp/prometheus-config-reloader
         tag: v0.31.1
 
       ## Set the prometheus config reloader side-car CPU limit. If unset, uses the prometheus-operator project default
