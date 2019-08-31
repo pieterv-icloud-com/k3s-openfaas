@@ -4,7 +4,7 @@ metadata:
   name: loki-stack
   namespace: kube-system
 spec:
-  chart: https://%{KUBERNETES_API}%/static/charts/loki-stack-0.15.0.tgz
+  chart: https://%{KUBERNETES_API}%/static/charts/loki-stack-0.16.0.tgz
   targetNamespace: monitoring
   valuesContent: |-
     loki:
