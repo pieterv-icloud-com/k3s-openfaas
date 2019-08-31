@@ -258,6 +258,11 @@ spec:
           url: http://prometheus.openfaas:9090
           access: proxy
           isDefault: false
+        - name: Loki
+          type: loki
+          url: http://loki-stack.monitoring:3100
+          access: proxy
+          isDefault: false
 
     ## Configure notifiers
     ## ref: http://docs.grafana.org/administration/provisioning/#alert-notification-channels
