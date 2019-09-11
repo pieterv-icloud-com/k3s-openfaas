@@ -27,4 +27,5 @@ users:
   user:
     token: ${token}
 " > /root/.kube/config
+
 octant
