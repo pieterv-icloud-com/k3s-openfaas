@@ -17,7 +17,7 @@
 
 - name: download loki helm chart
   get_url:
-      url: https://grafana.github.io/loki/charts/loki-stack-0.16.0.tgz
+      url: https://grafana.github.io/loki/charts/loki-stack-0.16.2.tgz
       dest: /var/lib/rancher/k3s/server/static/charts
       owner: root
       group: root

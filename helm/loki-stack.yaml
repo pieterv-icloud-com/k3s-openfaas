@@ -4,7 +4,7 @@ metadata:
   name: loki-stack
   namespace: kube-system
 spec:
-  chart: https://%{KUBERNETES_API}%/static/charts/loki-stack-0.16.0.tgz
+  chart: https://%{KUBERNETES_API}%/static/charts/loki-stack-0.16.2.tgz
   targetNamespace: monitoring
   valuesContent: |-
     loki:
@@ -15,15 +15,8 @@ spec:
 
     grafana:
       enabled: false
-      sidecar:
-        datasources:
-          enabled: true
-      image:
-        tag: 6.3.0-beta2
 
     prometheus:
       enabled: false
-      server:
-        fullnameOverride: prometheus-server
 
       
